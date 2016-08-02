@@ -21,7 +21,7 @@ gulp.task('scripts', function() {
     return gulp.src('src/angular-wysiwyg.js')
         .pipe(ngmin({dynamic: false}))
         .pipe(gulp.dest('dist'))
-        .pipe(rename('angular-wysiwyg.min.js'))
+        .pipe(rename('angular-wysiwyg.js'))
         .pipe(uglify())
         .pipe(gulp.dest('dist'));
 });
