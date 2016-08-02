@@ -4,7 +4,7 @@
   "description": "Angular WYSIWYG",
   "version": "1.2.4",
   "homepage": "https://github.com/TerryMooreII/angular-wysiwyg",
-  "main": "./dist/angular-wysiwyg.min.js",
+  "main": "./dist/angular-wysiwyg.js",
   "dependencies": {
     "angular": ">= 1.0.0",
     "angular-bootstrap-colorpicker": ">= 3.0.0",
