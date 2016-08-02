@@ -463,7 +463,8 @@ Requires:
       ],
       data: [{
           tag: 'i',
-          classes: 'fa fa-bold'
+          classes: 'material-icons',
+          html: 'format_bold'
         }]
     },
     'italic': {
@@ -489,7 +490,8 @@ Requires:
       ],
       data: [{
           tag: 'i',
-          classes: 'fa fa-italic'
+          classes: 'material-icons',
+          html: 'format_italic'
         }]
     },
     'underline': {
@@ -515,7 +517,8 @@ Requires:
       ],
       data: [{
           tag: 'i',
-          classes: 'fa fa-underline'
+          classes: 'material-icons',
+          html: 'format_underlined'
         }]
     },
     'strikethrough': {
@@ -541,7 +544,8 @@ Requires:
       ],
       data: [{
           tag: 'i',
-          classes: 'fa fa-strikethrough'
+          classes: 'material-icons',
+          html: 'format_strikethrough'
         }]
     },
     'subscript': {
@@ -567,7 +571,8 @@ Requires:
       ],
       data: [{
           tag: 'i',
-          classes: 'fa fa-subscript'
+          classes: 'material-icons',
+          html: 'format_strikethrough'
         }]
     },
     'superscript': {
@@ -615,7 +620,8 @@ Requires:
       ],
       data: [{
           tag: 'i',
-          classes: 'fa fa-eraser'
+          classes: 'material-icons',
+          html: 'format_clear'
         }]
     },
     'ordered-list': {
@@ -641,7 +647,8 @@ Requires:
       ],
       data: [{
           tag: 'i',
-          classes: 'fa fa-list-ol'
+          classes: 'material-icons',
+          html: 'format_list_numbered'
         }]
     },
     'unordered-list': {
@@ -667,7 +674,8 @@ Requires:
       ],
       data: [{
           tag: 'i',
-          classes: 'fa fa-list-ul'
+          classes: 'material-icons',
+          html: 'format_list_bulleted'
         }]
     },
     'outdent': {
@@ -689,7 +697,8 @@ Requires:
       ],
       data: [{
           tag: 'i',
-          classes: 'fa fa-outdent'
+          classes: 'material-icons',
+          html: 'format_indent_decrease'
         }]
     },
     'indent': {
@@ -711,7 +720,8 @@ Requires:
       ],
       data: [{
           tag: 'i',
-          classes: 'fa fa-indent'
+          classes: 'material-icons',
+          html: 'format_indent_increase'
         }]
     },
     'left-justify': {
@@ -737,7 +747,8 @@ Requires:
       ],
       data: [{
           tag: 'i',
-          classes: 'fa fa-align-left'
+          classes: 'material-icons',
+          html: 'format_align_left'
         }]
     },
     'center-justify': {
@@ -763,7 +774,8 @@ Requires:
       ],
       data: [{
           tag: 'i',
-          classes: 'fa fa-align-center'
+          classes: 'material-icons',
+          html: 'format_align_justify'
         }]
     },
     'right-justify': {
@@ -789,7 +801,8 @@ Requires:
       ],
       data: [{
           tag: 'i',
-          classes: 'fa fa-align-right'
+          classes: 'material-icons',
+          html: 'format_align_right'
         }]
     },
     'code': {
@@ -841,7 +854,8 @@ Requires:
       ],
       data: [{
           tag: 'i',
-          classes: 'fa fa-quote-right'
+          classes: 'material-icons',
+          html: 'format_quote'
         }]
     },
     'paragraph': {
