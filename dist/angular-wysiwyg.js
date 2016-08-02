@@ -918,7 +918,7 @@ Requires:
         },
         {
           name: 'colorpicker-position',
-          value: 'top'
+          value: 'bottom'
         },
         {
           name: 'ng-model',
@@ -949,7 +949,7 @@ Requires:
         },
         {
           name: 'colorpicker-position',
-          value: 'top'
+          value: 'bottom'
         },
         {
           name: 'ng-model',
