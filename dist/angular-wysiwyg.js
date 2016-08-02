@@ -69,7 +69,7 @@ Requires:
     '$compile',
     function ($timeout, wysiwgGui, $compile) {
       return {
-        template: '<div>' + '<style>' + '   .wysiwyg-textarea[contentEditable="false"] { background-color:#eee}' + '   .wysiwyg-btn-group-margin { margin-right:5px; }' + '   .wysiwyg-select { height:30px;margin-bottom:1px;}' + '   .wysiwyg-colorpicker { font-family: arial, sans-serif !important;font-size:16px !important; padding:2px 10px !important;}' + '</style>' + '<div class="wysiwyg-menu"></div>' + '<div id="{{textareaId}}" ng-attr-style="resize:vertical;height:{{textareaHeight || \'80px\'}}; overflow:auto" contentEditable="{{!disabled}}" class="{{textareaClass}} wysiwyg-textarea" name="{{textareaName}}" ng-model="value"></div>' + '</div>',
+        template: '<div>' + '<style>' + '   .wysiwyg-textarea[contentEditable="false"] { background-color:#eee}' + '}' + '</style>' + '<div class="wysiwyg-menu"></div>' + '<div id="{{textareaId}}" ng-attr-style="resize:vertical;height:{{textareaHeight || \'80px\'}}; overflow:auto" contentEditable="{{!disabled}}" class="{{textareaClass}} wysiwyg-textarea" name="{{textareaName}}" ng-model="value"></div>' + '</div>',
         restrict: 'E',
         scope: {
           value: '=ngModel',
@@ -441,8 +441,8 @@ Requires:
     }
   ]).value('wysiwgGuiElements', {
     'bold': {
-      tag: 'button',
-      classes: 'btn btn-default',
+      tag: 'div',
+      classes: 'btn-text-editor',
       attributes: [
         {
           name: 'title',
@@ -468,8 +468,8 @@ Requires:
         }]
     },
     'italic': {
-      tag: 'button',
-      classes: 'btn btn-default',
+      tag: 'div',
+      classes: 'btn-text-editor',
       attributes: [
         {
           name: 'title',
@@ -495,8 +495,8 @@ Requires:
         }]
     },
     'underline': {
-      tag: 'button',
-      classes: 'btn btn-default',
+      tag: 'div',
+      classes: 'btn-text-editor',
       attributes: [
         {
           name: 'title',
@@ -522,8 +522,8 @@ Requires:
         }]
     },
     'strikethrough': {
-      tag: 'button',
-      classes: 'btn btn-default',
+      tag: 'div',
+      classes: 'btn-text-editor',
       attributes: [
         {
           name: 'title',
@@ -549,8 +549,8 @@ Requires:
         }]
     },
     'subscript': {
-      tag: 'button',
-      classes: 'btn btn-default',
+      tag: 'div',
+      classes: 'btn-text-editor',
       attributes: [
         {
           name: 'title',
@@ -576,8 +576,8 @@ Requires:
         }]
     },
     'superscript': {
-      tag: 'button',
-      classes: 'btn btn-default',
+      tag: 'div',
+      classes: 'btn-text-editor',
       attributes: [
         {
           name: 'title',
@@ -602,8 +602,8 @@ Requires:
         }]
     },
     'remove-format': {
-      tag: 'button',
-      classes: 'btn btn-default',
+      tag: 'div',
+      classes: 'btn-text-editor',
       attributes: [
         {
           name: 'title',
@@ -625,8 +625,8 @@ Requires:
         }]
     },
     'ordered-list': {
-      tag: 'button',
-      classes: 'btn btn-default',
+      tag: 'div',
+      classes: 'btn-text-editor',
       attributes: [
         {
           name: 'title',
@@ -652,8 +652,8 @@ Requires:
         }]
     },
     'unordered-list': {
-      tag: 'button',
-      classes: 'btn btn-default',
+      tag: 'div',
+      classes: 'btn-text-editor',
       attributes: [
         {
           name: 'title',
@@ -679,8 +679,8 @@ Requires:
         }]
     },
     'outdent': {
-      tag: 'button',
-      classes: 'btn btn-default',
+      tag: 'div',
+      classes: 'btn-text-editor',
       attributes: [
         {
           name: 'title',
@@ -702,8 +702,8 @@ Requires:
         }]
     },
     'indent': {
-      tag: 'button',
-      classes: 'btn btn-default',
+      tag: 'div',
+      classes: 'btn-text-editor',
       attributes: [
         {
           name: 'title',
@@ -725,8 +725,8 @@ Requires:
         }]
     },
     'left-justify': {
-      tag: 'button',
-      classes: 'btn btn-default',
+      tag: 'div',
+      classes: 'btn-text-editor',
       attributes: [
         {
           name: 'title',
@@ -752,8 +752,8 @@ Requires:
         }]
     },
     'center-justify': {
-      tag: 'button',
-      classes: 'btn btn-default',
+      tag: 'div',
+      classes: 'btn-text-editor',
       attributes: [
         {
           name: 'title',
@@ -779,8 +779,8 @@ Requires:
         }]
     },
     'right-justify': {
-      tag: 'button',
-      classes: 'btn btn-default',
+      tag: 'div',
+      classes: 'btn-text-editor',
       attributes: [
         {
           name: 'title',
@@ -806,8 +806,8 @@ Requires:
         }]
     },
     'code': {
-      tag: 'button',
-      classes: 'btn btn-default',
+      tag: 'div',
+      classes: 'btn-text-editor',
       attributes: [
         {
           name: 'title',
@@ -832,8 +832,8 @@ Requires:
         }]
     },
     'quote': {
-      tag: 'button',
-      classes: 'btn btn-default',
+      tag: 'div',
+      classes: 'btn-text-editor',
       attributes: [
         {
           name: 'title',
@@ -859,8 +859,8 @@ Requires:
         }]
     },
     'paragraph': {
-      tag: 'button',
-      classes: 'btn btn-default',
+      tag: 'div',
+      classes: 'btn-text-editor',
       text: 'P',
       attributes: [
         {
@@ -882,8 +882,8 @@ Requires:
       ]
     },
     'image': {
-      tag: 'button',
-      classes: 'btn btn-default',
+      tag: 'div',
+      classes: 'btn-text-editor',
       attributes: [
         {
           name: 'title',
@@ -904,9 +904,9 @@ Requires:
         }]
     },
     'font-color': {
-      tag: 'button',
-      classes: 'btn btn-default wysiwyg-colorpicker wysiwyg-fontcolor',
-      text: 'A',
+      tag: 'i',
+      classes: 'wysiwyg-colorpicker wysiwyg-fontcolor material-icons',
+      text: 'format_color_text',
       attributes: [
         {
           name: 'title',
@@ -935,9 +935,9 @@ Requires:
       ]
     },
     'hilite-color': {
-      tag: 'button',
-      classes: 'btn btn-default wysiwyg-colorpicker wysiwyg-fontcolor',
-      text: 'H',
+      tag: 'i',
+      classes: 'wysiwyg-colorpicker wysiwyg-fontcolor material-icons',
+      text: 'format_color_fill',
       attributes: [
         {
           name: 'title',
@@ -1032,8 +1032,8 @@ Requires:
       ]
     },
     'link': {
-      tag: 'button',
-      classes: 'btn btn-default',
+      tag: 'div',
+      classes: 'btn-text-editor',
       attributes: [
         {
           name: 'title',
@@ -1058,8 +1058,8 @@ Requires:
         }]
     },
     'unlink': {
-      tag: 'button',
-      classes: 'btn btn-default',
+      tag: 'div',
+      classes: 'btn-text-editor',
       attributes: [
         {
           name: 'title',
