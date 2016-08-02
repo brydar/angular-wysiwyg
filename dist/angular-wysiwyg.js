@@ -36,7 +36,7 @@ Requires:
       ],
       ['format-block'],
       ['font'],
-    //   ['font-size'],
+      ['font-size'],
       [
         'font-color',
         'hilite-color'
